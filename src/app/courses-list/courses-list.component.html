@@ -1,0 +1,17 @@
+<h2>
+  Course List Component
+</h2>
+<table>
+  <tr>
+    <th>Courses offered:</th>
+    <th>Fees:</th>
+    <th>Qualification:</th>
+    <th>Duration:</th>
+  </tr>
+      <tr *ngFor="let item of courseList">
+        <td>{{item.course}}</td>
+        <td>{{item.fees}}</td>
+        <td>{{item.qualification }}</td>
+        <td>{{item.duration }}</td>
+      </tr>
+</table>
